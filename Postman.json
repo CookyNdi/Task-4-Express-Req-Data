@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "ccc45fe3-5f8e-41a8-9220-2532fa9fa269",
+		"name": "Pesilat 2023 | Express Js Req Data",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Req Data From Query",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/biodata?name=Yandi&birthPlace=Ciamis&birthDate=28 Juni 2023&address=Ciamis, Jawa Barat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"biodata"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Yandi"
+						},
+						{
+							"key": "birthPlace",
+							"value": "Ciamis"
+						},
+						{
+							"key": "birthDate",
+							"value": "28 Juni 2023"
+						},
+						{
+							"key": "address",
+							"value": "Ciamis, Jawa Barat"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Req Data From Body",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Yandi",
+							"type": "default"
+						},
+						{
+							"key": "birthPlace",
+							"value": "Ciamis",
+							"type": "default"
+						},
+						{
+							"key": "birthDate",
+							"value": "28 Juni 2003",
+							"type": "default"
+						},
+						{
+							"key": "address",
+							"value": "Ciamis, Jawa Barat",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000"
+				}
+			},
+			"response": []
+		}
+	]
+}
